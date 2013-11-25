@@ -28,10 +28,17 @@ class people::fredoliveira::applications {
     ]:
   }
 
-  # ------- sublime text setup -------
+  # >> sublime text
 
   include sublime_text_3
   include sublime_text_3::package_control
+
+  file { "${boxen::config::bindir}/subl":
+    ensure  => link,
+    target  => '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl',
+    mode    => '0755',
+    require => Package['SublimeText3'],
+  }
 
   sublime_text_3::package { 'Theme - Soda':
     source => 'buymeasoda/soda-theme'

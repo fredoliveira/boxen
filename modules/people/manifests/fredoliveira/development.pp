@@ -1,7 +1,7 @@
 class people::fredoliveira::development {
-  #class { 'ruby::global':
-  #  version => '2.0.0'
-  #}
+  class { 'ruby::global':
+    version => '2.0.0'
+  }
 
   phantomjs::version { '1.9.0': }
 
