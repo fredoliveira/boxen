@@ -25,19 +25,25 @@ class people::fredoliveira::system {
 
   #file { "${people::fredoliveira::params::my_homedir}/.zprezto/runcoms/zshrc":
   #  ensure  => link,
-  #  target  => "${people::fredoliveira::params::my_dotfiles}/.zshrc",
+  #  target  => "${people::fredoliveira::params::my_dotfiles}/zshrc",
   #  require => Repository[$people::fredoliveira::params::my_dotfiles]
   #}
 
   #file { "${people::fredoliveira::params::my_homedir}/.zprezto/runcoms/zpreztorc":
   #  ensure  => link,
-  #  target  => "${people::fredoliveira::params::my_dotfiles}/.zpreztorc",
+  #  target  => "${people::fredoliveira::params::my_dotfiles}/zpreztorc",
   #  require => Repository[$people::fredoliveira::params::my_dotfiles]
   #}
 
   file { "${people::fredoliveira::params::my_homedir}/Library/Preferences/com.googlecode.iterm2.plist":
     ensure  => link,
     target  => "${people::fredoliveira::params::my_dotfiles}/app_preferences/com.googlecode.iterm2.plist",
+    require => Repository[$people::fredoliveira::params::my_dotfiles]
+  }
+
+  file { "${people::fredoliveira::params::my_homedir}/.tmux.conf":
+    ensure  => link,
+    target  => "${people::fredoliveira::params::my_dotfiles}/tmux.conf",
     require => Repository[$people::fredoliveira::params::my_dotfiles]
   }
 
