@@ -154,6 +154,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-tmux
+  specs:
+    tmux (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-transmit
   specs:
     transmit (1.0.1)
@@ -240,6 +245,7 @@ DEPENDENCIES
   stdlib (= 4.1.0)
   sublime_text_3 (= 1.0.1)
   sudo (= 1.0.0)
+  tmux (= 1.0.2)
   transmit (= 1.0.1)
   unarchiver (= 1.2.0)
   vlc (= 1.0.5)

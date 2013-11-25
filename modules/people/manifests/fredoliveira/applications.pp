@@ -13,6 +13,7 @@ class people::fredoliveira::applications {
   include notational_velocity::nvalt
   include vlc
 
+  include tmux
   include gitx::dev
   include sequel_pro
   include mysql
@@ -20,6 +21,12 @@ class people::fredoliveira::applications {
   include java
   include elasticsearch
   include phantomjs
+
+  package {
+    [
+      'git-flow'
+    ]:
+  }
 
   # ------- sublime text setup -------
 
