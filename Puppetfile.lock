@@ -184,6 +184,11 @@ GITHUBTARBALL
     onepassword (1.0.3)
 
 GITHUBTARBALL
+  remote: fredoliveira/puppet-sketch
+  specs:
+    sketch (1.0.0)
+
+GITHUBTARBALL
   remote: fredoliveira/puppet-source_code_pro
   specs:
     source_code_pro (1.0.8)
@@ -241,6 +246,7 @@ DEPENDENCIES
   repository (= 2.2.0)
   ruby (= 6.7.5)
   sequel_pro (= 1.0.1)
+  sketch (= 1.0.0)
   source_code_pro (= 1.0.8)
   stdlib (= 4.1.0)
   sublime_text_3 (= 1.0.1)
