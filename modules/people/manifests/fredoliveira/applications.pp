@@ -12,6 +12,7 @@ class people::fredoliveira::applications {
   include source_code_pro
   include notational_velocity::nvalt
   include vlc
+  include sketch
 
   include tmux
   include gitx::dev
